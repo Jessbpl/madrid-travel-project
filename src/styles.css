@@ -1,5 +1,63 @@
 body {
   font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("images/madrid-head.jpg");
+  background-repeat: no repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 260px 286px;
+}
+header h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  margin: 30px 0;
+}
+header h2 {
   font-weight: 400;
-  font-style: normal;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+}
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-top: 32px;
+  background: white;
+  text-decoration: none;
+  color: #343232;
+  padding: 16px 32px;
+  display: inline-block;
+}
+@media (max-width: 900px) {
+  header {
+    padding: 30px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
 }
