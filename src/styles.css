@@ -14,6 +14,7 @@ header {
   color: #fff;
   text-align: center;
   padding: 260px 286px;
+  border-radius: 20px;
 }
 header h1 {
   font-weight: 700;
@@ -43,11 +44,41 @@ header a {
   margin: 0px;
   margin-top: 32px;
   background: white;
+  border-radius: 20px;
   text-decoration: none;
   color: #343232;
   padding: 16px 32px;
   display: inline-block;
 }
+main {
+  background-color: #fff;
+}
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 5px;
+  color: #282a36;
+  opacity: 0.5;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin: 0;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #282a36;
+  margin: 0;
+}
+main p,
+li {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #282a36;
+  font-style: normal;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(47, 69, 96, 0.8),
@@ -57,7 +88,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  padding: 100px 0;
+  border-radius: 20px;
 }
 footer h3 {
   font-weight: 700;
@@ -69,7 +100,6 @@ footer p {
   font-size: 16px;
   line-height: 24px;
   opacity: 0.8;
-  margin-right: 20px;
 }
 footer ul {
   padding: 0;
@@ -86,10 +116,20 @@ footer a {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 .grid {
   display: grid;
+  grid-gap: 64px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns-1st-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.palacio-cristal {
+  max-width: 100%;
 }
 
 @media (max-width: 900px) {
@@ -104,5 +144,12 @@ section {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
   }
 }
