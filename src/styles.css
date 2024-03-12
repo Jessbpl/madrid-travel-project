@@ -2,18 +2,15 @@ body {
   font-family: "Poppins", sans-serif;
   background: #282a36;
 }
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url("images/madrid-head.jpg");
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
   text-align: center;
-  padding: 260px 286px;
+  padding: 260px 0;
   border-radius: 20px;
 }
 header h1 {
@@ -33,6 +30,7 @@ header h3 {
   font-size: 24px;
   line-height: 1.5;
   margin: 0;
+  letter-spacing: 5px;
 }
 header a {
   font-weight: 700;
@@ -41,7 +39,6 @@ header a {
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
-  margin: 0px;
   margin-top: 32px;
   background: white;
   border-radius: 20px;
@@ -70,6 +67,21 @@ main h3 {
   color: #282a36;
   margin: 0;
 }
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #343232;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #282a36;
+  margin: 0;
+}
 main p,
 li {
   font-weight: 400;
@@ -77,6 +89,7 @@ li {
   line-height: 1.5;
   color: #282a36;
   font-style: normal;
+  opacity: 0.7;
 }
 
 footer {
@@ -99,7 +112,7 @@ footer p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 footer ul {
   padding: 0;
@@ -111,12 +124,22 @@ footer li {
 }
 footer a {
   color: #fff;
-  opacity: 0.8;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+section.hidden-gems {
+  background: #f0e8e8c3;
+}
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .grid {
   display: grid;
@@ -128,8 +151,35 @@ section {
 .grid-3-columns-1st-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
-.palacio-cristal {
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.img-responsive {
+  display: block;
   max-width: 100%;
+}
+.card {
+  background-color: #ffffff79;
+  margin: 16px 32px;
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+.button {
+  display: block;
+  color: #fff;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  background-color: #282a36;
+  text-decoration: none;
+  border-radius: 20px;
 }
 
 @media (max-width: 900px) {
