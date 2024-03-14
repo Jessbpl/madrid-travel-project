@@ -59,6 +59,7 @@ main h2 {
   line-height: 1.5;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 20px;
 }
 main h3 {
   font-weight: 700;
@@ -130,9 +131,14 @@ section {
   margin: 0 auto;
   padding: 100px;
 }
+
 section.hidden-gems {
-  background: #f0e8e8c3;
+  background: #f8dfdfc3;
 }
+section.gastro {
+  background: #d9e0f8c3;
+}
+
 .text-center {
   text-align: center;
 }
@@ -143,7 +149,7 @@ section.hidden-gems {
 }
 .grid {
   display: grid;
-  grid-gap: 64px;
+  grid-gap: 60px;
 }
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
@@ -153,19 +159,30 @@ section.hidden-gems {
 }
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
 }
 .img-responsive {
   display: block;
   max-width: 100%;
+  border-radius: 5px;
 }
+
 .card {
   background-color: #ffffff79;
   margin: 16px 32px;
   border-radius: 10px;
 }
-
+.card-header.grid {
+  grid-gap: 0;
+}
 .card-body {
-  padding: 20px;
+  padding: 30px;
+}
+.embed {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  aspect-ratio: 16/10;
 }
 .button {
   display: block;
@@ -180,6 +197,12 @@ section.hidden-gems {
   background-color: #282a36;
   text-decoration: none;
   border-radius: 20px;
+}
+.more-plans img:hover {
+  transform: scale(1.1);
+}
+.more-plans img {
+  margin-top: 20px;
 }
 
 @media (max-width: 900px) {
@@ -201,5 +224,11 @@ section.hidden-gems {
   }
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
